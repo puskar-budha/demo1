@@ -1,2 +1,1 @@
-print("hello puskar")
-print("hi raja")
+print("ram ram ram")
