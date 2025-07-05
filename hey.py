@@ -13,3 +13,23 @@ lcm=np.lcm.reduce(arr1)
 print(lcm)
 gcd=np.gcd.reduce(arr2)
 print(gcd)
+print("welcome to scissors,paper and rock game !")
+print("take a guess.")
+while True:
+    choices=["scissors","paper","rock"]
+    guess=input("enter scissors or paper or rock or(quit to exit game):").lower()
+    if guess=="quit":
+        break
+    if guess not in choices:
+        print("sorry it's not valid try again...")
+        continue
+    ai=random.choice(choices)
+    print(f"ai choose {ai}")
+    if(ai==guess):
+        print("it's tie.Try again.")
+    elif (ai=="scissors" and guess=="rock")or\
+       (ai=="paper" and guess=="scissors")or\
+       (ai=="rock" and guess=="paper"):
+          print("congrats! you win")
+    else:
+        print("ai win.") 
