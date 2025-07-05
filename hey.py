@@ -1,1 +1,15 @@
 print("ram ram ram")
+import numpy as np
+from numpy import random
+ran=random.randint(1,100,size=(3,5))
+print(ran)
+arr1=np.array([3,6,8,9])
+arr2=np.array([4,9,2,3])
+new=np.sum([arr1,arr2],axis=1)
+p=np.prod([arr1,arr2],axis=1)
+print(new)
+print(p)
+lcm=np.lcm.reduce(arr1)
+print(lcm)
+gcd=np.gcd.reduce(arr2)
+print(gcd)
